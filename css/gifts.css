@@ -1,0 +1,397 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Arial", sans-serif;
+}
+
+h1 {
+	font-family: "Montserrat", "Arial", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 32px;
+	line-height: 150%;
+	letter-spacing: calc(32px * 0.18);
+}
+
+h2 {
+	font-family: "Allura", "Arial", cursive;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 24px;
+	line-height: 100%;
+	letter-spacing: calc(24px * 0.05);
+}
+
+h3 {
+	font-family: "Montserrat", "Arial", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 24px;
+	line-height: 152%;
+	letter-spacing: calc(24px * 0.16);
+}
+
+p {
+	font-family: "Montserrat", "Arial", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 148%;
+}
+
+h4 {
+	font-family: "Montserrat", "Arial", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 152%;
+	letter-spacing: calc(16px * 0.08);
+}
+
+h5 {
+	font-family: "Montserrat", "Arial", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 12px;
+	line-height: 130%;
+	letter-spacing: calc(12px * 0.05);
+}
+
+.small {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 12px;
+	line-height: 130%;
+	letter-spacing: calc(12px * 0.05);
+}
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	background: #ff4646;
+	border-radius: 20px;
+	/* background-image: url("../img-compressed/bg-snow.png");
+	background-repeat: repeat;
+	background-position: center;
+	background-size: contain; */
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px 0;
+	margin: 0 82px;
+}
+
+.header-logo {
+	display: flex;
+	align-items: center;
+	margin-right: 12px;
+	cursor: pointer;
+}
+
+.header-logo_image {
+	background-image: url("../img-compressed/snowflake.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	width: 24px;
+	height: 24px;
+	margin: 8px 8px 8px 20px;
+}
+
+.header-logo a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+	color: #181c29;
+}
+
+li[aria-disabled="true"] {
+	pointer-events: none;
+}
+
+.header-logo_name {
+	padding: 12px 20px 12px 0;
+	color: #181c29;
+}
+
+.header nav ul {
+	display: flex;
+	list-style: none;
+}
+
+.header nav ul li {
+	cursor: pointer;
+}
+
+.header nav ul li:first-child {
+	margin-left: 0;
+}
+
+.header nav ul li:last-child {
+	margin-right: 0;
+}
+
+.header nav ul li:hover {
+	color: #ff4646;
+	background-color: #ffeded;
+	border-radius: 12px;
+}
+
+.header nav ul li a {
+	padding: 12px 19px;
+	margin: 0 4px;
+	text-decoration: none;
+	color: #181c29;
+	display: block;
+}
+
+.header nav ul li a:hover {
+	color: #ff4646;
+}
+
+.garland-section {
+	color: white;
+	background-image: url("../img-compressed/bg-garland.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.garland-info {
+	text-align: center;
+}
+
+.garland-text {
+	padding-top: 44px;
+	max-width: 433px;
+	margin: 0 auto;
+}
+
+.garland-text h1 {
+	margin: 12px 0;
+}
+.garland-info h2 {
+	margin: 12px 0;
+}
+
+.gift-section {
+	text-align: center;
+	padding: 13px 82px 61px 82px;
+}
+
+.gift-section_header nav ul {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+}
+
+.gift-section_header nav ul li:hover {
+	background-color: #ff6b6b;
+	border-radius: 12px;
+	cursor: pointer;
+}
+
+.gift-section_header nav ul li a {
+	padding: 12px 19px;
+	margin: 0 4px;
+	text-decoration: none;
+	color: #fff;
+	display: block;
+}
+
+.gift-card-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 12px;
+	margin-top: 20px;
+}
+
+.gift-card {
+	background: #ecf3f8;
+	border-radius: 20px;
+	text-align: center;
+	cursor: pointer;
+}
+.gift-card:hover .gift-card-text h4 {
+	color: #ff4646;
+}
+
+.gift-card-image {
+	height: 230px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.gift-card:nth-child(1) .gift-card-image,
+.gift-card:nth-child(3) .gift-card-image,
+.gift-card:nth-child(4) .gift-card-image,
+.gift-card:nth-child(10) .gift-card-image {
+	background-image: url("../img-compressed/gift-for-work.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.gift-card:nth-child(2) .gift-card-image,
+.gift-card:nth-child(5) .gift-card-image,
+.gift-card:nth-child(7) .gift-card-image,
+.gift-card:nth-child(9) .gift-card-image {
+	background-image: url("../img-compressed/gift-for-health.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.gift-card:nth-child(6) .gift-card-image,
+.gift-card:nth-child(8) .gift-card-image,
+.gift-card:nth-child(11) .gift-card-image,
+.gift-card:nth-child(12) .gift-card-image {
+	background-image: url("../img-compressed/gift-for-harmony.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.gift-card-text {
+	height: 111px;
+	text-align: left;
+	border-radius: 17px;
+	background: #fff;
+	padding: 20px 20px 44px 20px;
+}
+
+.gift-card-text h5 {
+	margin-bottom: 8px;
+}
+
+.gift-card:nth-child(1) .gift-card-text h5,
+.gift-card:nth-child(3) .gift-card-text h5,
+.gift-card:nth-child(4) .gift-card-text h5,
+.gift-card:nth-child(10) .gift-card-text h5 {
+	color: #4361ff;
+}
+.gift-card:nth-child(2) .gift-card-text h5,
+.gift-card:nth-child(5) .gift-card-text h5,
+.gift-card:nth-child(7) .gift-card-text h5,
+.gift-card:nth-child(9) .gift-card-text h5 {
+	color: #06a44f;
+}
+
+.gift-card:nth-child(6) .gift-card-text h5,
+.gift-card:nth-child(8) .gift-card-text h5,
+.gift-card:nth-child(11) .gift-card-text h5,
+.gift-card:nth-child(12) .gift-card-text h5 {
+	color: #ff43f7;
+}
+
+.footer {
+	background: #fff;
+	color: #333;
+	margin-top: 60px;
+}
+
+.footer-card-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	gap: 12px;
+	margin: 0 82px;
+}
+
+.footer-card {
+	text-align: center;
+	background: #ecf3f8;
+	border-radius: 20px;
+}
+
+.footer-card:hover {
+	color: #ff4646;
+	cursor: pointer;
+}
+
+.footer-card a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.footer-share {
+	text-align: center;
+	margin: 67px 82px;
+}
+
+.footer-share p {
+	margin: 15px 0;
+}
+
+.footer-card:nth-child(1) .footer-card-image {
+	background-image: url("../img-compressed/san-claus.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.footer-card:nth-child(2) .footer-card-image {
+	background-image: url("../img-compressed/christmas-tree.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.footer-card:nth-child(3) .footer-card-image {
+	background-image: url("../img-compressed/snake.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+.footer-card-text {
+	text-align: center;
+	margin: 12px 20px 20px 20px;
+}
+
+.footer-card-text h3 {
+	margin-bottom: 12px;
+}
+
+.footer-card-image {
+	height: 80px;
+	margin-top: 20px;
+}
+
+.footer-share h2:hover {
+	color: #ff4646;
+	cursor: pointer;
+}
+.footer-share h2 a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.social-networks {
+	display: flex;
+	justify-content: center;
+	gap: 32px;
+}
+
+.telegram,
+.facebook,
+.instagram,
+.twitter:hover {
+	cursor: pointer;
+}
+
+.telegram:hover .social-icon path,
+.facebook:hover .social-icon path,
+.instagram:hover .social-icon path,
+.twitter:hover .social-icon path {
+	stroke: #ff4646;
+}
