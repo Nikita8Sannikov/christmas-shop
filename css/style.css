@@ -1,0 +1,583 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family: "Arial", sans-serif;
+}
+
+h1 {
+	font-family: "Montserrat", "Arial", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 32px;
+	line-height: 150%;
+	letter-spacing: calc(32px * 0.18);
+}
+
+h2 {
+	font-family: "Allura", "Arial", cursive;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 24px;
+	line-height: 100%;
+	letter-spacing: calc(24px * 0.05);
+}
+
+h3 {
+	font-family: "Montserrat", "Arial", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 24px;
+	line-height: 152%;
+	letter-spacing: calc(24px * 0.16);
+}
+
+p {
+	font-family: "Montserrat", "Arial", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 148%;
+}
+
+h4 {
+	font-family: "Montserrat", "Arial", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 16px;
+	line-height: 152%;
+	letter-spacing: calc(16px * 0.08);
+}
+
+h5 {
+	font-family: "Montserrat", "Arial", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 12px;
+	line-height: 130%;
+	letter-spacing: calc(12px * 0.05);
+}
+
+.small {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 12px;
+	line-height: 130%;
+	letter-spacing: calc(12px * 0.05);
+}
+
+.container {
+	max-width: 1440px;
+	margin: 0 auto;
+}
+
+.wrapper {
+	background: #ff4646;
+	border-radius: 20px;
+	background-image: url("../img-compressed/bg-snow.png");
+	background-repeat: repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 12px 0;
+	margin: 0 82px;
+}
+
+.header-logo {
+	display: flex;
+	align-items: center;
+	margin-right: 12px;
+	cursor: pointer;
+}
+
+.header-logo_image {
+	background-image: url("../img-compressed/snowflake.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	width: 24px;
+	height: 24px;
+	/* margin-right: 10px; */
+	margin: 8px 8px 8px 20px;
+}
+
+.header-logo a {
+	display: block;
+	height: 100%;
+	width: 100%;
+	text-decoration: none;
+	color: #181c29;
+}
+
+.header-logo_name {
+	padding: 12px 20px 12px 0;
+	color: #181c29;
+}
+
+.header nav ul {
+	display: flex;
+	list-style: none;
+}
+
+.header nav ul li {
+	cursor: pointer;
+}
+
+.header nav ul li:first-child {
+	margin-left: 0;
+}
+
+.header nav ul li:last-child {
+	margin-right: 0;
+}
+
+.header nav ul li:hover {
+	color: #ff4646;
+	background-color: #ffeded;
+	border-radius: 12px;
+}
+
+.header nav ul li a {
+	padding: 12px 19px;
+	margin: 0 4px;
+	text-decoration: none;
+	color: #181c29;
+	display: block;
+}
+
+.header nav ul li a:hover {
+	color: #ff4646;
+}
+
+.hero-section {
+	padding: 110px 82px;
+	color: white;
+	background-image: url("../img-compressed/bg-ball.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.hero-info {
+	text-align: center;
+}
+
+.hero-info_text {
+	max-width: 433px;
+	margin: 0 auto;
+}
+
+.hero-info_text h1 {
+	margin: 12px 0;
+}
+
+.hero-info h2 {
+	margin: 12px 0;
+}
+
+.main-button.small {
+	background: #181c29;
+	color: white;
+	border: none;
+	padding: 20px 32px;
+	cursor: pointer;
+	border-radius: 20px;
+}
+
+.main-button:hover {
+	background: #fff;
+	color: #181c29;
+}
+
+.about-section {
+	background-color: #fff;
+	border-radius: 20px;
+	margin: 56px 82px;
+}
+
+.about-section h2 {
+	color: #ff4646;
+}
+
+.about-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.about-text {
+	max-width: 50%;
+	padding: 0 152px 0 60px;
+}
+.about-text h2 {
+	margin: 20px 0;
+}
+
+.about-text p {
+	margin: 20px 0;
+}
+
+.about-image {
+	width: 638px;
+	height: 528px;
+	background-image: url("../img-compressed/santa.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	border-radius: 20px;
+}
+
+.slider-section {
+	padding: 65px 0;
+	text-align: center;
+}
+.slider-header {
+	color: #fff;
+}
+
+.slider-header h2 {
+	margin-bottom: 12px;
+}
+
+.slider-container {
+	display: flex;
+	justify-content: flex-start;
+	flex-wrap: nowrap;
+	align-items: center;
+	overflow-x: hidden;
+	padding: 0 0 0 82px;
+}
+
+.slider-container_image:nth-child(2) {
+	background-image: url("../img-compressed/snowman.png");
+	background-size: cover;
+	background-position: center;
+}
+.slider-container_image:nth-child(4) {
+	background-image: url("../img-compressed/christmas-trees.png");
+	background-size: cover;
+	background-position: center;
+}
+.slider-container_image:nth-child(6) {
+	background-image: url("../img-compressed/christmas-tree-ball.png");
+	background-size: cover;
+	background-position: center;
+}
+.slider-container_image:nth-child(8) {
+	background-image: url("../img-compressed/fairytale-house.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.slider-container_text {
+	font-family: "Montserrat", "Arial", sans-serif;
+	font-weight: 600;
+	font-style: normal;
+	font-size: 80px;
+	color: #fff;
+}
+
+.slider-container_image {
+	width: 200px;
+	height: 200px;
+	margin: 20px;
+	border-radius: 20px;
+	flex-shrink: 0;
+}
+
+.slider-button-field {
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 67px;
+}
+
+.arrow-button {
+	width: 60px;
+	height: 57px;
+	background: #ff4646;
+	border-radius: 23px;
+	margin: 0 10px;
+	cursor: pointer;
+	border: 1px solid #fff;
+}
+
+.arrow-button:hover {
+	background: #fff;
+}
+.arrow-icon path {
+	transition: stroke 0.3s ease;
+}
+
+.arrow-button:hover .arrow-icon path {
+	stroke: #ff4646;
+}
+
+.arrow-button:disabled {
+	border: 1px solid #fff;
+	opacity: 0.4;
+	cursor: not-allowed;
+}
+
+.arrow-button:disabled .arrow-icon path {
+	stroke: #fff;
+}
+
+.best-section {
+	text-align: center;
+	padding: 57px 82px;
+}
+
+.best-section_header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	color: #fff;
+}
+
+.best-section_header h2 {
+	margin-bottom: 12px;
+}
+
+.best-card-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 12px;
+	margin-top: 20px;
+}
+
+.best-card {
+	background: #ecf3f8;
+	border-radius: 20px;
+	text-align: center;
+	cursor: pointer;
+}
+
+.best-card:hover .best-card-text h4 {
+	color: #ff4646;
+}
+
+.best-card-image {
+	height: 230px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+}
+
+.best-card:nth-child(1) .best-card-image {
+	background-image: url("../img-compressed/gift-for-work.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.best-card:nth-child(2) .best-card-image {
+	background-image: url("../img-compressed/gift-for-health.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.best-card:nth-child(3) .best-card-image {
+	background-image: url("../img-compressed/gift-for-work.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.best-card:nth-child(4) .best-card-image {
+	background-image: url("../img-compressed/gift-for-harmony.png");
+	background-size: cover;
+	background-position: center;
+}
+
+.best-card-text {
+	height: 111px;
+	text-align: left;
+	border-radius: 17px;
+	background: #fff;
+	padding: 20px 20px 44px 20px;
+}
+
+.best-card-text h5 {
+	margin-bottom: 8px;
+}
+
+.best-card:nth-child(1) .best-card-text h5 {
+	color: #4361ff;
+}
+
+.best-card:nth-child(2) .best-card-text h5 {
+	color: #06a44f;
+}
+
+.best-card:nth-child(3) .best-card-text h5 {
+	color: #4361ff;
+}
+
+.best-card:nth-child(4) .best-card-text h5 {
+	color: #ff43f7;
+}
+
+.CTA-section {
+	margin-bottom: 60px;
+	padding: 180px 0px;
+	text-align: center;
+	color: white;
+	background-image: url("../img-compressed/bg-forest.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.CTA-container {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+.CTA-text {
+	margin-bottom: 20px;
+}
+
+.CTA-timer-container {
+	margin-top: 20px;
+}
+
+.CTA-timer-text {
+	margin-bottom: 8px;
+}
+
+.CTA-timer {
+	display: flex;
+	justify-content: center;
+}
+
+.CTA-timer-card {
+	background: #ff9090;
+	padding: 8px 12px;
+	text-align: center;
+	width: 80px;
+}
+
+.CTA-timer-card.left {
+	padding: 8px 0 12px 12px;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.CTA-timer-card.right {
+	padding: 8px 12px 12px 0;
+	border-top-right-radius: 20px;
+	border-bottom-right-radius: 20px;
+}
+
+.footer {
+	background: #fff;
+	color: #333;
+}
+
+.footer-card-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	gap: 12px;
+	margin: 0 82px;
+}
+
+.footer-card {
+	text-align: center;
+	background: #ecf3f8;
+	border-radius: 20px;
+}
+
+.footer-card:hover {
+	color: #ff4646;
+	cursor: pointer;
+}
+
+.footer-card a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.footer-share {
+	text-align: center;
+	margin: 67px 82px;
+}
+
+.footer-share p {
+	margin: 15px 0;
+}
+
+.footer-card:nth-child(1) .footer-card-image {
+	background-image: url("../img-compressed/san-claus.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.footer-card:nth-child(2) .footer-card-image {
+	background-image: url("../img-compressed/christmas-tree.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.footer-card:nth-child(3) .footer-card-image {
+	background-image: url("../img-compressed/snake.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.footer-card-text {
+	text-align: center;
+	margin: 12px 20px 20px 20px;
+}
+
+.footer-card-text h3 {
+	margin-bottom: 12px;
+}
+
+.footer-card-image {
+	height: 80px;
+	margin-top: 20px;
+}
+
+.footer-share h2:hover {
+	color: #ff4646;
+	cursor: pointer;
+}
+
+.footer-share h2 a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.social-networks {
+	display: flex;
+	justify-content: center;
+	gap: 32px;
+}
+
+.telegram,
+.facebook,
+.instagram,
+.twitter:hover {
+	cursor: pointer;
+}
+
+.telegram:hover .social-icon path,
+.facebook:hover .social-icon path,
+.instagram:hover .social-icon path,
+.twitter:hover .social-icon path {
+	stroke: #ff4646;
+}
