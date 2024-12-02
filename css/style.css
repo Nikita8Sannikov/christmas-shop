@@ -458,17 +458,30 @@ h5 {
 
 .CTA-timer {
 	display: flex;
-	justify-content: center;
+	justify-content: space-around;
+	text-align: center;
+	align-items: center;
+	width: 346px;
+	height: 68px;
+	padding: 6px 20px;
+	background-color: #ffffff68;
+	border-radius: 20px;
+	margin: 0 auto;
 }
 
 .CTA-timer-card {
-	background: #ff9090;
-	padding: 8px 12px;
-	text-align: center;
-	width: 80px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 1;
+}
+.CTA-timer img {
+	margin: 0 5px;
+	padding: 0;
+	height: 20px;
 }
 
-.CTA-timer-card.left {
+/* .CTA-timer-card.left {
 	padding: 8px 0 12px 12px;
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
@@ -478,7 +491,7 @@ h5 {
 	padding: 8px 12px 12px 0;
 	border-top-right-radius: 20px;
 	border-bottom-right-radius: 20px;
-}
+} */
 
 .footer {
 	background: #fff;
@@ -514,7 +527,7 @@ h5 {
 }
 
 .footer-share p {
-	margin: 15px 0;
+	margin: 19px 0 13px 0;
 }
 
 .footer-card:nth-child(1) .footer-card-image {
@@ -565,7 +578,7 @@ h5 {
 .social-networks {
 	display: flex;
 	justify-content: center;
-	gap: 32px;
+	gap: 29px;
 }
 
 .telegram,
