@@ -181,11 +181,11 @@ h5 {
 		cursor: pointer;
 	}
 
-	/* .line {
+	.line {
 		transition: all 0.3s ease;
-	} */
+	}
 
-	/* .burger:hover .line {
+	.burger:hover .line {
 		stroke: #ff4646;
 	}
 
@@ -195,7 +195,7 @@ h5 {
 
 	.burger:hover .line2 {
 		transform: rotate(45deg) translate(9px, -22px);
-	} */
+	}
 }
 
 .hero-section {
@@ -314,7 +314,7 @@ h5 {
 }
 @media (max-width: 380px) {
 	.about-image {
-		width: 347px;
+		width: 367px;
 	}
 }
 
@@ -344,7 +344,6 @@ h5 {
 	align-items: center;
 	overflow-x: hidden;
 	padding: 0 0 0 5.125rem;
-	scroll-behavior: smooth;
 }
 
 @media (max-width: 768px) {
