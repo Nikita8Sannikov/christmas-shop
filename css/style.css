@@ -897,6 +897,7 @@ dialog::backdrop {
 }
 
 dialog {
+	width: 28%;
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -910,9 +911,9 @@ dialog span {
 	display: flex;
 	justify-content: flex-end;
 	cursor: pointer;
-	font-size: 1.5rem;
+	font-size: 2rem;
 	color: #181c29;
-	padding-right: 10px;
+	padding: 4px 20px;
 }
 
 dialog .best-card .best-card-text {
@@ -926,12 +927,53 @@ dialog .best-card .best-card-text {
 .superPower-title {
 	display: flex;
 	width: 100%;
-	padding: 20px 10px;
+	/* padding: 20px 10px; */
+	padding: 10px 10px 0 10px;
 }
 .superPower-range {
-	padding: 20px 20px 20px 10px;
+	/* padding: 20px 20px 20px 10px; */
+	padding: 10px 13px 0 10px;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 	gap: 20px;
+}
+
+.superPower-range-bar {
+	display: flex;
+	gap: 5px;
+}
+
+.best-card-subtext {
+	padding-bottom: 20px;
+}
+
+.best-card-subtext h5 {
+	display: flex;
+	padding: 20px 20px 0px 20px;
+}
+
+.modal-description {
+	margin-top: 5px;
+}
+
+@media (max-width: 1000px) {
+	dialog {
+		width: 35%;
+	}
+}
+@media (max-width: 800px) {
+	dialog {
+		width: 50%;
+	}
+}
+@media (max-width: 600px) {
+	dialog {
+		width: 70%;
+	}
+}
+@media (max-width: 380px) {
+	dialog {
+		width: 100%;
+	}
 }
