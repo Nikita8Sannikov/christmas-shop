@@ -14,9 +14,10 @@ export const tabsPlugin = () => {
 				.toLowerCase()
 				.replace(" ", "");
 
-			const cards = document.querySelectorAll(".gift-card");
-
-			cards.forEach((card) => {
+			const cardsWithoutModal = document.querySelectorAll(
+				".gift-card:not(.modal)"
+			);
+			cardsWithoutModal.forEach((card) => {
 				if (card.classList.contains(category) || category === "all") {
 					card.style.display = "block";
 				} else {
