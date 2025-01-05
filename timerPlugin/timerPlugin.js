@@ -1,6 +1,6 @@
 export const countdownTimerPlugin = () => {
 	function getDiff() {
-		const targetDate = new Date("2025-01-01T00:00:00Z").getTime();
+		const targetDate = new Date("2026-01-01T00:00:00Z").getTime();
 		const now = new Date().getTime();
 		return (targetDate - now) / 1000 / 60 / 60 / 24;
 	}
