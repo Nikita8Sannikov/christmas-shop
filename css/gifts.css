@@ -606,9 +606,15 @@ body.no-scroll {
 	flex-direction: column;
 	align-items: center;
 	position: absolute;
-	top: 50%;
+	top: 58%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+}
+
+@media (max-width: 425px) {
+	.burger-modal ul.active {
+		top: 45%;
+	}
 }
 
 .burger-modal ul li {
@@ -653,8 +659,8 @@ body.no-scroll {
 @media (max-width: 768px) {
 	.top-scroll-button {
 		position: fixed;
-		bottom: 20px;
-		right: 20px;
+		bottom: 8px;
+		right: 8px;
 		z-index: 999;
 		border: 1px solid #ff4646;
 		background-color: #fff;
