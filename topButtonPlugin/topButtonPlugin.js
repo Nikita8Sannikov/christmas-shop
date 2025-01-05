@@ -1,4 +1,3 @@
-// КНОПКА НАВЕРХ
 export const topButtonPlugin = () => {
 	const topButton = document.getElementById("top");
 	topButton.style.visibility = "hidden";

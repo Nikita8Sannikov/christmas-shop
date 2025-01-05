@@ -1,4 +1,3 @@
-// бургер модалка
 const burgerIcon = document.querySelector(".burger");
 const burgerLinks = document.querySelectorAll(".burger-modal a");
 const burgerModal = document.querySelector(".burger-modal");
