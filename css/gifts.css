@@ -262,7 +262,7 @@ li[aria-disabled="true"] {
 @media (max-width: 380px) {
 	.gift-section {
 		text-align: center;
-		padding: 7.5rem 0.5rem 3.875rem 0px;
+		padding: 7.5rem 0.5rem 3.875rem 0.5rem;
 	}
 }
 
@@ -274,6 +274,12 @@ li[aria-disabled="true"] {
 
 .gift-section_header nav ul li {
 	margin: 0 0.3125rem;
+}
+
+@media (max-width: 768px) {
+	.gift-section_header nav ul li {
+		margin: 0;
+	}
 }
 
 .gift-section_header nav ul li:hover {
@@ -290,7 +296,7 @@ li[aria-disabled="true"] {
 
 .gift-section_header nav ul li a {
 	padding: 0.75rem 1.1875rem;
-	margin: 0 0.25rem;
+	margin: 0 0.2rem;
 	text-decoration: none;
 	color: #fff;
 	display: block;
