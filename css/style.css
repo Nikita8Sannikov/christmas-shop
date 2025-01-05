@@ -971,7 +971,7 @@ dialog .best-card .best-card-text {
 		width: 70%;
 	}
 }
-@media (max-width: 380px) {
+@media (max-width: 450px) {
 	dialog {
 		width: 100%;
 	}
