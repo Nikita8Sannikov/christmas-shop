@@ -2,8 +2,10 @@ export function renderGifts(gifts, cardContainer, style, isHome = false) {
 	const shuffledGifts = gifts.sort(() => Math.random() - 0.5);
 	const giftsToRender = isHome ? shuffledGifts.slice(0, 4) : shuffledGifts;
 	giftsToRender.forEach((gift) => {
+		const category = gift.category.toLowerCase().replace(" ", "");
 		const card = document.createElement("div");
 		card.classList.add(`${style}-card`);
+		card.classList.add(`${category}`);
 		card.innerHTML = `
              <div class="${style}-card-image"></div>
             <div class="${style}-card-text">
