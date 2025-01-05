@@ -20,6 +20,7 @@
 			href="./img-compressed/snowflake.png"
 		/>
 		<link rel="stylesheet" href="./css/gifts.css" />
+		<script type="module" src="giftPage.js" defer></script>
 	</head>
 	<body>
 		<div class="container">
@@ -31,6 +32,33 @@
 					</div>
 				</div>
 				<nav>
+					<div class="burger">
+						<svg
+							class="burger-icon"
+							width="40"
+							height="40"
+							viewBox="0 0 40 40"
+							fill="none"
+							xmlns="http://www.w3.org/2000/svg"
+						>
+							<path
+								class="line line1"
+								d="M10 16H30"
+								stroke="#181C29"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+							<path
+								class="line line2"
+								d="M10 24H30"
+								stroke="#181C29"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							/>
+						</svg>
+					</div>
 					<ul class="small">
 						<li aria-disabled="true"><a href="#gifts">GIFTS</a></li>
 						<li><a href="index.html#about">ABOUT</a></li>
@@ -39,6 +67,22 @@
 					</ul>
 				</nav>
 			</header>
+			<div class="burger-modal">
+				<ul class="">
+					<li>
+						<a href="gifts.html#gifts"><h3>GIFTS</h3></a>
+					</li>
+					<li>
+						<a href="#about"><h3>ABOUT</h3></a>
+					</li>
+					<li>
+						<a href="#best"><h3>BEST</h3></a>
+					</li>
+					<li>
+						<a href="#contacts"><h3>CONTACTS</h3></a>
+					</li>
+				</ul>
+			</div>
 			<div class="wrapper">
 				<main class="main">
 					<section class="garland-section">
@@ -64,7 +108,7 @@
 							</nav>
 						</div>
 						<div class="gift-card-container">
-							<div class="gift-card">
+							<!-- <div class="gift-card">
 								<div class="gift-card-image"></div>
 								<div class="gift-card-text">
 									<h5>FOR WORK</h5>
@@ -147,7 +191,7 @@
 									<h5>FOR HARMONY</h5>
 									<h4>SPONTANEOUS CODING PHILOSOPHER</h4>
 								</div>
-							</div>
+							</div> -->
 						</div>
 					</section>
 				</main>
@@ -279,6 +323,35 @@
 					<p>© Copyright 2025, All Rights Reserved</p>
 				</div>
 			</footer>
+			<button id="top" class="top-scroll-button">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M12 5V19" stroke="#FF4646" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M18 11L12 5" stroke="#FF4646" stroke-linecap="round" stroke-linejoin="round"/>
+					<path d="M6 11L12 5" stroke="#FF4646" stroke-linecap="round" stroke-linejoin="round"/>
+					</svg>
+					
+			</button>
+			<dialog id="profileDialog">
+				<div class="modal">
+					<div class="gift-card">
+						<span aria-label="close" class="close-modal"
+							>&#x2715;</span
+						>
+						<div class="gift-card-image"></div>
+						<div class="gift-card-text">
+							<h5 id="modal-title"></h5>
+							<h4 id="modal-content"></h4>
+							<p id="modal-description"></p>
+						</div>
+						<div class="gift-card-subtext" id="modal-superpowers">
+							<h4>ADDS SUPERPOWERS TO</h4>
+						
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</dialog>
 		</div>
 	</body>
 </html>
