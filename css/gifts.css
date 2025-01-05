@@ -162,6 +162,12 @@ li[aria-disabled="true"] {
 	border-radius: 12px;
 }
 
+.header nav ul li.active {
+	color: #ff4646;
+	background-color: #ffeded;
+	border-radius: 12px;
+}
+
 .header nav ul li a {
 	padding: 0.75rem 1.1875rem;
 	margin: 0 0.25rem;
@@ -171,6 +177,10 @@ li[aria-disabled="true"] {
 }
 
 .header nav ul li a:hover {
+	color: #ff4646;
+}
+
+.header nav ul li a.active {
 	color: #ff4646;
 }
 
@@ -262,7 +272,17 @@ li[aria-disabled="true"] {
 	justify-content: center;
 }
 
+.gift-section_header nav ul li {
+	margin: 0 0.3125rem;
+}
+
 .gift-section_header nav ul li:hover {
+	background-color: #ff6b6b;
+	border-radius: 12px;
+	cursor: pointer;
+}
+
+.gift-section_header nav ul li.active {
 	background-color: #ff6b6b;
 	border-radius: 12px;
 	cursor: pointer;
